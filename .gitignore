@@ -1,0 +1,28 @@
+# Dataset (do not commit)
+data/
+*.cache
+
+# Training artefacts (keep best.pt only if <50MB; rest is large)
+runs/*/weights/last.pt
+runs/*/weights/epoch*.pt
+runs/detect/
+runs/label_audit/
+runs/visualizations/
+
+# Pretrained checkpoints (re-downloaded on demand)
+yolo26n.pt
+yolo26s.pt
+yolo26m.pt
+yolo26l.pt
+yolo26x.pt
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
